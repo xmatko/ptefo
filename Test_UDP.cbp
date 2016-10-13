@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Test_UDP" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="x86-Debug">
+				<Option output="bin/Debug/Test_UDP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="DEBUG=1 $make -f $makefile" />
+					<CompileFile command="DEBUG=1 $make -f $makefile $file" />
+					<Clean command="DEBUG=1 $make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="DEBUG=1 $make -q -f $makefile" />
+					<SilentBuild command="DEBUG=1 $make -s -f $makefile" />
+				</MakeCommands>
+			</Target>
+			<Target title="x86-Release">
+				<Option output="bin/Release/Test_UDP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile" />
+					<SilentBuild command="$make -s -f $makefile" />
+				</MakeCommands>
+			</Target>
+			<Target title="powerpc-Release">
+				<Option output="bin/Release/Test_UDP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="ARCH=powerpc CROSS_COMPILE=powerpc-603e-linux-gnu- $make -f $makefile" />
+					<CompileFile command="ARCH=powerpc CROSS_COMPILE=powerpc-603e-linux-gnu- $make -f $makefile $file" />
+					<Clean command="ARCH=powerpc CROSS_COMPILE=powerpc-603e-linux-gnu- $make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="ARCH=powerpc CROSS_COMPILE=powerpc-603e-linux-gnu- $make -q -f $makefile" />
+					<SilentBuild command="ARCH=powerpc CROSS_COMPILE=powerpc-603e-linux-gnu- $make -s -f $makefile" />
+				</MakeCommands>
+			</Target>
+			<Target title="powerpc-Debug">
+				<Option output="bin/Debug/Test_UDP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="ARCH=powerpc DEBUG=1 CROSS_COMPILE=powerpc-603e-linux-gnu- $make -f $makefile" />
+					<CompileFile command="ARCH=powerpc DEBUG=1 CROSS_COMPILE=powerpc-603e-linux-gnu- $make -f $makefile $file" />
+					<Clean command="ARCH=powerpc DEBUG=1 CROSS_COMPILE=powerpc-603e-linux-gnu- $make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="ARCH=powerpc DEBUG=1 CROSS_COMPILE=powerpc-603e-linux-gnu- $make -q -f $makefile" />
+					<SilentBuild command="ARCH=powerpc DEBUG=1 CROSS_COMPILE=powerpc-603e-linux-gnu- $make -s -f $makefile" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="Makefile" />
+		<Unit filename="make-powerpc.sh" />
+		<Unit filename="make-x86.sh" />
+		<Unit filename="src/cli/Makefile" />
+		<Unit filename="src/cli/cli_udp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/serv/Makefile" />
+		<Unit filename="src/serv/server_udp2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="x86-Debug" />
+	<File name="Makefile" open="0" top="0" tabpos="0">
+		<Cursor position="854" topLine="21" />
+	</File>
+	<File name="make-powerpc.sh" open="0" top="0" tabpos="0">
+		<Cursor position="21" topLine="0" />
+	</File>
+	<File name="src/serv/server_udp2.c" open="1" top="1" tabpos="0">
+		<Cursor position="2100" topLine="87" />
+	</File>
+</CodeBlocks_layout_file>
